@@ -4,8 +4,8 @@
 /* TEAM */
 
     Me: Vance
-	Twitter: @VanceBraziel82
-	From: State of Georgia, US
+    Twitter: @VanceBraziel82
+    From: State of Georgia, US
 
 /* THANKS */
 
@@ -23,8 +23,8 @@
 	
 /* SITE */
 
-	Last update: 2022/02/10
-	Language: English
-	Doctype: HTML5
-	IDE: VS2019/22
+    Last update: 2022/02/10
+    Language: English
+    Doctype: HTML5
+    IDE: VS2019/22
     Other IDE I use: VSCode, JetBrains & Tools, VS Blend, and Adroid Dev Studio
