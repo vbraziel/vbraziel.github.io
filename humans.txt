@@ -1,15 +1,30 @@
 # humanstxt.org/
 # The humans responsible & technology colophon
 
-# TEAM
+/* TEAM */
 
-    <name> -- <role> -- <twitter>
+    Me: Vance
+	Twitter: @VanceBraziel82
+	From: State of Georgia, US
 
-# THANKS
+/* THANKS */
 
-    <name>
+    My Creator
+    Friends and Family
+    Professional Mentors Along the way
+    Favorite Rsources: Safari Books Online
+    Favorite STEM Not for Profit: Freecodecamp
 
-# TECHNOLOGY COLOPHON
+/* TECHNOLOGY COLOPHON */
 
     CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Modernizr, Normalize.css
+    A2HS Spec
+	
+/* SITE */
+
+	Last update: 2022/02/10
+	Language: English
+	Doctype: HTML5
+	IDE: VS2019/22
+    Other IDE I use: VSCode, JetBrains & Tools, VS Blend, and Adroid Dev Studio
