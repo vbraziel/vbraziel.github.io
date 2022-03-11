@@ -1,2 +1,2 @@
 # vbraziel.github.io
-My online presence
+Web enabled presence.
