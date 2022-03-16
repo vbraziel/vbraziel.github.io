@@ -2,26 +2,27 @@
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <!-- Prefetching -->
-    <link rel="dns-prefetch" href="//s3.amazonaws.com">
-    <title>My name is Vance</title>
+    <link rel="dns-prefetch" href="//s3.amazonaws.com" />
+    <title>My name is Vance</title />
 
     <!-- Meta -->
-    <meta name="description" content="Digital resume and portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta property="og:title" content="My name is Vance">
-    <meta property="og:type" content="Resume">
-    <meta property="og:url" content="Professional Information">
-    <meta property="og:image" content="">
-    <meta name="theme-color" content="#fafafa">
+    <meta name="description" content="Digital resume and portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="My name is Vance" />
+    <meta property="og:type" content="Resume" />
+    <meta property="og:url" content="Professional Information" />
+    <meta property="og:image" content="" />
+    <meta name="theme-color" content="#fafafa" />
 
     <!-- Links -->
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="icon.png">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/nojs.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/nojs.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/app.css" />
   
     <!-- SRC -->
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -37,25 +38,26 @@
             <h1>
                 Vance E Braziel
             </h1>
-            <div></div>
             <address>
                 Nahunta, GA,  31553
             </address>
-            <div></div>
-            <my-mobile>
-                757-535-7813
-            </my-mobile>
-            <div></div>
             <my-email>
-                vbraziel@hotmail.com
+                <div>
+                    <span>Send an <a href="mailto:vbraziel@hotmail.com">email.</a></span>
+                </div>
             </my-email>
-            <div></div>
+            <my-mobile>
+                <div>
+                    <span>Contact by <a href="tel:+7575357813">phone.</a></span>
+                </div>
+            </my-mobile>
             <my-tagline>
-                Progressive Web Applications from data to presentation or Managing by System Administration!
+                <p>
+                    Progressive Web Applications from data to presentation or Managing by System Administration!
+                </p>
             </my-tagline>
-            <div></div>
             <section>
-            <h2>Social Network</h2>
+                <h2>Social Network</h2>
                 <my-socialnets>
                     <ul>
                         <li><a href="https://www.twitter.com/VanceBraziel82" target="_blank">Twitter</a></li>
@@ -69,14 +71,14 @@
     <hr />
     <nav>
         <ul>
-            <li><a>Job Position</a></li>
-            <li><a>Skill Summary</a></li>
-            <li><a>Credentials</a></li>
-            <li><a>Work Experience</a></li>
+            <li><a href="#myposition">Job Position</a></li>
+            <li><a href="#skills">Skill Summary</a></li>
+            <li><a href="#credentials">Credentials</a></li>
+            <li><a href="#experience">Work Experience</a></li>
         </ul>
     </nav>
     <hr>
-    <section>
+    <section id="myposition">
         <my-position>
             <h1>
                 Software Engineering/Architect | Information Systems Specialist
@@ -90,7 +92,7 @@
                 from software life-cycle management and industry
                 leaders. Possess a comprehensive background in
                 data mining, data APIs, application security
-                <a href="https://owasp.org" target="_blank">OWASP</a>, progressive web
+                <a href="https://owasp.org/about/" target="_blank">OWASP</a>, progressive web
                 application design, micro-service architecture,
                 project management, Lean 6 Sigma, software testing
                 and cloud computing. Proficient in technical
@@ -103,7 +105,7 @@
                 certifications below.
             </p>
         </my-position>
-        <section>
+        <section id="skills">
             <my-skills>
                 <h2>Skill Summary</h2>
                 <ul>
@@ -126,7 +128,7 @@
         </section>
     </section>
     <hr>
-    <section>
+    <section id="credentials">
         <my-credentials>
         <!-- TODO: Make the certifications section a gallary to manage a number of certifications I have received -->
             <h1>Credentials</h1>
@@ -143,16 +145,16 @@
                     <h2>Certifications</h2>
                     <ul>
                         <li><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:a2554e32-69a0-36b3-8046-d9bca955432b" target="_blank">CompTIA Security+ ce | 2016</a></li>
-                        <li><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:e1314577-4d03-3864-9094-8db33be7cc7f" target="_blank">Java Script Certification | 2022</a></li>
                         <li><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:abce2301-5fa0-3013-98d7-c8ef9e3f852c" target="_blank">HTML Certification | 2017</a></li>
                         <li><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:d92fe413-faf8-386d-9b63-3a7b5a924919" target="_blank">C++ Certification | 2017</a></li>
+                        <li><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:e1314577-4d03-3864-9094-8db33be7cc7f" target="_blank">Java Script Certification | 2022</a></li>
                     </ul>
                 </my-certificates>
             </section>
         </my-credentials>
     </section>
     <hr>
-    <section>
+    <section id="experience">
         <my-experience>
             <h1>Experience</h1>
             <my-current>
@@ -204,7 +206,7 @@
             </my-previous>
         </my-experience>
   </section>
-  <section>
+  <section class="hidden">
       <h1>Software Life-Cycle Competencies</h1>
       <section>
           <h2>Planning</h2>
