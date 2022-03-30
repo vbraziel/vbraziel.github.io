@@ -1,3 +1,29 @@
-﻿.hidden {
+﻿body {
+    background: black;
+}
+
+main {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: rgb(172,172,172);
+    border-radius: 5px;
+}
+
+section {
+    margin: 10px;
+}
+
+h1 {
+    font-family: "Arial", sans-serif;
+    font-weight: 100;
+    font-variant-ligatures: normal;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.hidden {
     visibility:hidden
 }
