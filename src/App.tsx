@@ -6,9 +6,37 @@ import { Experience } from "./components/Experience";
 import { Skills } from "./components/Skills";
 import { Credentials } from "./components/Credentials";
 import { Contact } from "./components/Contact";
+import { buildJsonLd } from "./data/resume";
 
 export function App() {
   onMount(() => {
+    // Full structured-data payload for AI/recruiting crawlers (supplements the static block in index.html)
+    const ldScript = document.createElement("script");
+    ldScript.type = "application/ld+json";
+    ldScript.id = "resume-jsonld";
+    ldScript.textContent = JSON.stringify(buildJsonLd());
+    document.head.appendChild(ldScript);
+
+    // Scroll progress (0–1) drives the morphing background via --scroll
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let ticking = false;
+    const updateScroll = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const p = max > 0 ? window.scrollY / max : 0;
+      document.documentElement.style.setProperty("--scroll", p.toFixed(4));
+      ticking = false;
+    };
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateScroll);
+      }
+    };
+    if (!reducedMotion) {
+      window.addEventListener("scroll", onScroll, { passive: true });
+      updateScroll();
+    }
+
     // Scroll-reveal via IntersectionObserver
     const observer = new IntersectionObserver(
       (entries) => {
@@ -31,7 +59,10 @@ export function App() {
         observer.observe(el);
       });
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      window.removeEventListener("scroll", onScroll);
+    };
   });
 
   return (

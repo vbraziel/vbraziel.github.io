@@ -43,6 +43,7 @@ export function About() {
       >
         {/* Summary */}
         <p
+          class="card"
           style={{
             color: "var(--color-text-secondary)",
             "font-size": "1.05rem",
@@ -58,9 +59,7 @@ export function About() {
           style={{
             display: "grid",
             "grid-template-columns": "repeat(2, 1fr)",
-            gap: "1px",
-            background: "var(--color-border)",
-            border: "1px solid var(--color-border)",
+            gap: "0.75rem",
             width: "fit-content",
           }}
           role="list"

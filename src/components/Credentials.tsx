@@ -38,7 +38,7 @@ export function Credentials() {
         class="credentials-grid"
       >
         {/* Education */}
-        <div>
+        <div class="card">
           <h3
             style={{
               "font-family": "var(--font-mono)",
@@ -107,7 +107,7 @@ export function Credentials() {
         </div>
 
         {/* Certifications */}
-        <div>
+        <div class="card">
           <h3
             style={{
               "font-family": "var(--font-mono)",

@@ -29,8 +29,9 @@ export interface Education {
 export const resume = {
   name: "Vance E. Braziel",
   title: "Software Engineer & IT Specialist",
-  tagline: "20 years building systems that can't afford to fail.",
-  location: "Nahunta, GA",
+  tagline:
+    "Two decades keeping the fleet's systems online — now shipping software across the galaxy of the modern web.",
+  location: "Jacksonville, FL",
   email: "vbraziel@hotmail.com",
   social: {
     github: { url: "https://github.com/vbraziel", label: "GitHub" },
@@ -40,7 +41,7 @@ export const resume = {
     },
   },
   summary:
-    "Military veteran with 20 years in Information Systems Technology. Now focused on software development — bringing the same standards of reliability, security, and systems thinking from the field into production code. Background spans data APIs, OWASP security, PWA design, microservice architecture, Lean 6 Sigma, and multi-cloud platforms.",
+    "Military veteran with 20 years in Information Systems Technology, now a software developer at Georgia Southern University while finishing a B.S. in Information Technology with an emphasis in Data and AI. Background spans data APIs, OWASP security, PWA design, microservice architecture, Lean 6 Sigma, and multi-cloud platforms.",
   stats: [
     { value: "20+", label: "Years in IT" },
     { value: "USN", label: "Veteran" },
@@ -73,14 +74,14 @@ export const resume = {
   ] as SkillGroup[],
   experience: [
     {
-      role: "Student — B.S. Software Engineering",
-      org: "Western Governors University",
-      location: "Remote",
-      start: "Mar 2022",
+      role: "Software Developer",
+      org: "Georgia Southern University",
+      location: "Statesboro, GA",
+      start: "2024",
       end: "Present",
       current: true,
       summary:
-        "Enrolled in Bachelor of Software Engineering Program. Curriculum includes multiple CompTIA industry certifications.",
+        "Software developer at Georgia Southern University while completing a B.S. in Information Technology with an emphasis in Data and AI.",
       highlights: [],
     },
     {
@@ -134,8 +135,9 @@ export const resume = {
   credentials: {
     education: [
       {
-        degree: "Bachelor of Science — Software Engineering (In Progress)",
-        institution: "Western Governors University",
+        degree:
+          "Bachelor of Science — Information Technology, Data & AI Emphasis (In Progress)",
+        institution: "Georgia Southern University",
         link: null,
       },
       {
@@ -168,3 +170,47 @@ export const resume = {
     ] as Credential[],
   },
 } as const;
+
+/** Builds a schema.org Person JSON-LD object from the resume data for machine consumers. */
+export function buildJsonLd(): Record<string, unknown> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: resume.name,
+    jobTitle: resume.title,
+    description: resume.summary,
+    email: `mailto:${resume.email}`,
+    url: "https://vbraziel.github.io/",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Jacksonville",
+      addressRegion: "FL",
+      addressCountry: "US",
+    },
+    sameAs: [resume.social.github.url, resume.social.linkedin.url],
+    worksFor: {
+      "@type": "CollegeOrUniversity",
+      name: "Georgia Southern University",
+    },
+    knowsAbout: resume.skills.flatMap((g) => g.items),
+    hasOccupation: resume.experience.map((e) => ({
+      "@type": "Occupation",
+      name: e.role,
+      description: e.summary,
+      occupationLocation: { "@type": "Place", name: e.location },
+    })),
+    hasCredential: [
+      ...resume.credentials.education.map((ed) => ({
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        name: ed.degree,
+      })),
+      ...resume.credentials.certifications.map((c) => ({
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "certification",
+        name: c.name,
+        ...(c.year ? { dateCreated: String(c.year) } : {}),
+      })),
+    ],
+  };
+}

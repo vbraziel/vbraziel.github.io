@@ -57,12 +57,14 @@ export function Contact() {
 
       {/* Contact table */}
       <dl
+        class="card"
         style={{
           display: "flex",
           "flex-direction": "column",
           gap: "0",
           "max-width": "480px",
-          border: "1px solid var(--color-border)",
+          padding: "0.5rem 0",
+          overflow: "hidden",
         }}
       >
         <For each={contactItems}>
@@ -81,8 +83,7 @@ export function Contact() {
                   "letter-spacing": "0.1em",
                   "text-transform": "uppercase",
                   color: "var(--color-text-muted)",
-                  padding: "0.875rem 1rem",
-                  background: "var(--color-surface)",
+                  padding: "0.875rem 1.25rem",
                   display: "flex",
                   "align-items": "center",
                   "border-right": "1px solid var(--color-border)",

@@ -18,7 +18,7 @@ export function Hero() {
     >
       {/* Pre-label */}
       <p class="section-label" style={{ "margin-bottom": "1.5rem" }}>
-        // hello, world
+        // incoming transmission
       </p>
 
       {/* Name */}

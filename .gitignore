@@ -9,3 +9,7 @@
 /.vs/vbraziel.github.io/v16
 /.vs/vbraziel.github.io/config/applicationhost.config
 /.vs
+
+# Build output and dependencies
+node_modules/
+dist/

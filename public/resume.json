@@ -1,0 +1,106 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+  "basics": {
+    "name": "Vance E. Braziel",
+    "label": "Software Engineer & IT Specialist",
+    "email": "vbraziel@hotmail.com",
+    "url": "https://vbraziel.github.io/",
+    "summary": "Military veteran with 20 years in Information Systems Technology, now a software developer at Georgia Southern University while finishing a B.S. in Information Technology with an emphasis in Data and AI. Background spans data APIs, OWASP security, PWA design, microservice architecture, Lean 6 Sigma, and multi-cloud platforms.",
+    "location": {
+      "city": "Jacksonville",
+      "region": "FL",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "vbraziel",
+        "url": "https://github.com/vbraziel"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "vance-braziel-saios",
+        "url": "https://www.linkedin.com/in/vance-braziel-saios"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Georgia Southern University",
+      "position": "Software Developer",
+      "location": "Statesboro, GA",
+      "startDate": "2024",
+      "summary": "Software developer at Georgia Southern University while completing a B.S. in Information Technology with an emphasis in Data and AI.",
+      "highlights": []
+    },
+    {
+      "name": "Analytic Solutions (ANSOL) Inc.",
+      "position": "Software Developer",
+      "location": "San Diego, CA",
+      "startDate": "2021-07",
+      "endDate": "2022-02",
+      "summary": "Developed for a flagship SPA delivering analytics for US Navy fleet maintenance, spending, and product lifecycle management.",
+      "highlights": [
+        "Built SharePoint-hosted SPA with role-based access integrating a suite of internal tools.",
+        "Daily data mining from REST endpoints — processed into CSVs consumed by production SPAs.",
+        "Implemented custom queue data structure against the SharePoint users and permissions API.",
+        "Extensive HTML5 Canvas API work for rich front-end data visualization."
+      ]
+    },
+    {
+      "name": "United States Navy",
+      "position": "IT Manager",
+      "location": "Various",
+      "startDate": "2014-01",
+      "endDate": "2021-07",
+      "summary": "Managed IT/Analytics departments ranging from 15 to 100 personnel across multiple commands.",
+      "highlights": [
+        "Served as assistant department head for Training Analytics (12 months).",
+        "Led full restoration of a 100-client network post-power outage; authored PowerShell/Bash runbooks for future resilience.",
+        "Managed communications network infrastructure and streaming services for a 1,200-client organization.",
+        "Assistant plans and policy analyst for distributed information systems spanning ~50 organizations."
+      ]
+    },
+    {
+      "name": "United States Navy",
+      "position": "IT Specialist",
+      "location": "Various",
+      "startDate": "2001-01",
+      "endDate": "2013-12",
+      "summary": "Information Systems Technician — advanced from apprentice through journeyman to leading petty officer.",
+      "highlights": [
+        "IT System/Database Operator for a Naval Submarine Network.",
+        "Administered shipboard communications infrastructure; authored custom shell scripts for daily operations.",
+        "Led a team ensuring continuous uptime of IT services across multiple Naval organizations."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Georgia Southern University",
+      "area": "Information Technology — Data & AI Emphasis",
+      "studyType": "Bachelor of Science (In Progress)"
+    },
+    {
+      "institution": "",
+      "area": "Computing Technology",
+      "studyType": "Associate of Applied Science",
+      "endDate": "2019"
+    }
+  ],
+  "certificates": [
+    { "name": "CompTIA Security+ ce", "date": "2016" },
+    { "name": "HTML Certification", "date": "2017" },
+    { "name": "C++ Certification", "date": "2017" },
+    { "name": "JavaScript Certification", "date": "2017" }
+  ],
+  "skills": [
+    { "name": "Cloud", "keywords": ["Amazon AWS", "MS Azure", "Google Cloud", "Oracle Cloud"] },
+    { "name": "Languages", "keywords": ["JavaScript", "TypeScript", "Java", "C++"] },
+    { "name": "APIs & Protocols", "keywords": ["REST", "SOAP", "HTTP/2"] },
+    { "name": "Tools & DevOps", "keywords": ["Docker", "Git", "SVN", "Postman", "VS Code", "JetBrains"] },
+    { "name": "Design", "keywords": ["Adobe XD", "Affinity Designer"] },
+    { "name": "Data", "keywords": ["HeidiSQL", "SQL", "Data Mining", "ETL Pipelines"] },
+    { "name": "Security", "keywords": ["OWASP", "CompTIA Security+", "Network Security"] }
+  ]
+}

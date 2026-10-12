@@ -30,15 +30,16 @@ export function Skills() {
       </h2>
 
       <div
+        class="skills-grid"
         style={{
-          display: "flex",
-          "flex-direction": "column",
-          gap: "2rem",
+          display: "grid",
+          "grid-template-columns": "1fr",
+          gap: "1rem",
         }}
       >
         <For each={resume.skills}>
           {(group) => (
-            <div>
+            <div class="card">
               <p
                 style={{
                   "font-family": "var(--font-mono)",
@@ -73,6 +74,14 @@ export function Skills() {
           )}
         </For>
       </div>
+
+      <style>{`
+        @media (min-width: 640px) {
+          .skills-grid {
+            grid-template-columns: 1fr 1fr !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }

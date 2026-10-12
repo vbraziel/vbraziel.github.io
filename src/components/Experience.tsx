@@ -34,9 +34,10 @@ export function Experience() {
           {(job, i) => (
             <article
               role="listitem"
+              class="card"
               style={{
                 position: "relative",
-                "padding-bottom": i() < resume.experience.length - 1 ? "3rem" : "0",
+                "margin-bottom": i() < resume.experience.length - 1 ? "1.5rem" : "0",
               }}
               aria-label={`${job.role} at ${job.org}`}
             >
